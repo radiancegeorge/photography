@@ -11,7 +11,10 @@ const barIcon = <FontAwesomeIcon icon={faBars} />
     const navigation = ['home', 'about', 'contact', 'gallery'];
     const [toggleMenu, change] = useState(null)
     return(
-        <header>
+        <header style= {{
+            zIndex: '100',
+            backgroundColor: 'white'
+        }}>
             <nav>
                 <div className = 'logo' style = {{
                     fontWeight: "800"

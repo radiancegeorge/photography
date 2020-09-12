@@ -8,13 +8,14 @@ const Gallery = ()=>{
         data: [],
         loading: <div className = 'loading' style={{
             color: 'red', 
-            fontSize: '50px'
+            fontSize: '20px'
         }}>
             <span><FontAwesomeIcon icon={faBasketballBall} /></span>
             <div style = {{
                 fontSize: '15px',
                 color: 'black',
-                marginTop: '20px'
+                marginTop: '20px',
+                textAlign: 'center'
             }}>Loading...</div>
                 </div>
     })
@@ -33,18 +34,33 @@ const Gallery = ()=>{
                     loading: null
 
                 })
+            }).catch(err=>{
+                if(err) setSrc({
+                  loading: <div className = 'loading'>An error occured</div>,
+                  data: []
+                })
             })
         })
     }, [url])
 
 
     return(
-        <div className = 'gallery'>
-            {src.data.map((img, key)=>(
-                <Images key = {key} src = {img} alt = {key}/>
-            ))}
-            {src.loading}
-        </div>
+       <section >
+           <div style = {{
+               padding: '20px',
+                textAlign: 'center',
+                fontWeight: 600,
+                background: 'lightgrey'
+           }}>
+               Gallery
+           </div>
+            <div className='gallery'>
+                {src.data.map((img, key) => (
+                    <Images key={key} src={img} alt={key} />
+                ))}
+                {src.loading}
+            </div>
+       </section>
     )
 }
 export default Gallery;

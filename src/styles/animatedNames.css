@@ -1,0 +1,67 @@
+p {
+  font-weight: 600;
+  top: 0;
+  left: 0;
+}
+
+p span {
+  font-size: 150%;
+  color: purple;
+  font-weight: 600;
+  position: relative;
+  -webkit-animation-name: increase;
+          animation-name: increase;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  display: block;
+  margin-left: 20px;
+}
+
+.play-out {
+  -webkit-animation-name: play-out;
+          animation-name: play-out;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.play-in {
+  -webkit-animation-name: play-in;
+          animation-name: play-in;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes play-out {
+  to {
+    left: 100vw;
+  }
+}
+
+@keyframes play-out {
+  to {
+    left: 100vw;
+  }
+}
+
+@-webkit-keyframes play-in {
+  from {
+    left: 100vw;
+  }
+}
+
+@keyframes play-in {
+  from {
+    left: 100vw;
+  }
+}
+/*# sourceMappingURL=animatedNames.css.map */
