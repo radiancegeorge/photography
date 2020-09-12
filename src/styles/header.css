@@ -1,0 +1,131 @@
+header {
+  padding: 10px;
+  -webkit-box-shadow: 2px 0px 4px lightgrey;
+          box-shadow: 2px 0px 4px lightgrey;
+  position: relative;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .sub {
+  position: absolute;
+  background: white;
+  top: 0;
+  width: 70%;
+  left: -80%;
+  border-right: 1px solid lightgrey;
+  height: 100vh;
+}
+
+header nav .sub .cancel {
+  cursor: pointer;
+  font-size: 35px;
+  padding: 10px;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 800;
+  -webkit-animation-name: rotation;
+          animation-name: rotation;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+  top: 0;
+}
+
+header nav .sub a {
+  padding: 15px 10px;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  text-transform: capitalize;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header nav .sub a:hover {
+  background-color: lightgrey;
+}
+
+.slide-in {
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.slide-out {
+  -webkit-animation-name: slideout;
+          animation-name: slideout;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slideout {
+  from {
+    left: 0;
+    opacity: 1;
+  }
+  to {
+    left: -80%;
+    opacity: 0;
+  }
+}
+
+@keyframes slideout {
+  from {
+    left: 0;
+    opacity: 1;
+  }
+  to {
+    left: -80%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slidein {
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slidein {
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotation {
+  to {
+    top: 15px;
+  }
+}
+
+@keyframes rotation {
+  to {
+    top: 15px;
+  }
+}
+/*# sourceMappingURL=header.css.map */
