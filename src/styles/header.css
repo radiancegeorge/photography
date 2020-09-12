@@ -2,7 +2,9 @@ header {
   padding: 10px;
   -webkit-box-shadow: 2px 0px 4px lightgrey;
           box-shadow: 2px 0px 4px lightgrey;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 header nav {

@@ -8,12 +8,12 @@ const barIcon = <FontAwesomeIcon icon={faBars} />
 
 
  const Header = ()=>{
-    const navigation = ['home', 'about', 'contact', 'gallery'];
+    const navigation = ['home', 'contact', 'gallery'];
     const [toggleMenu, change] = useState(null)
     return(
         <header style= {{
             zIndex: '100',
-            backgroundColor: 'white'
+            backgroundColor: 'white',
         }}>
             <nav>
                 <div className = 'logo' style = {{
@@ -27,6 +27,7 @@ const barIcon = <FontAwesomeIcon icon={faBars} />
                     }}>
                         +
                     </div>
+                    
                     {navigation.map((link, key)=>(
                         <div key={key}>
                             <Link  to={
@@ -38,6 +39,13 @@ const barIcon = <FontAwesomeIcon icon={faBars} />
                             </Link>
                         </div>
                     ))}
+                    <div>
+                        <Link to='#about' onClick={() => {
+                            change('slide-out')
+                        }}>
+                            About
+                        </Link>
+                    </div>
                 </div>
                 <div className = 'bars' style= {{
                     cursor: 'pointer',

@@ -8,6 +8,7 @@ import Header from './components/Header';
 import Gallery from './components/views/Gallery';
 import Footer from './components/Footer';
 import Home from './components/views/Home';
+import About from './components/views/About';
 function App() {
   return (
     <div style={{
@@ -19,6 +20,7 @@ function App() {
         <Switch>
           <Route exact path = '/'>
             <Home />
+            <About />
           </Route>
           <Route path = '/gallery'>
               <Gallery />
