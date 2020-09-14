@@ -1,5 +1,6 @@
 import React from 'react';
 const About = ()=>{
+    
     return(
         <div id = 'about' style={{
             padding: '20px 0'
@@ -19,39 +20,29 @@ const About = ()=>{
             <div style ={{
                 padding: '0 10px 40px 10px'
             }}>
-                <h3>
-                    Some Heading
+                <h3 style={{
+                    textAlign: "center"
+                }}>
+                    Thank you for checking me out
                 </h3>
+
                 <p style={{
                     wordWrap: 'break-word',
                     wordBreak: 'break-word',
-                    fontSize: '15px'
+                    fontSize: '15px',
+                    textAlign: "center",
+                    lineHeight: 2
                 }}>
-                    A really good writting about my self.
-                    i am such a cool guy, well if you dont know me, then you are missing a lot
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vero voluptatum, consequuntur animi distinctio, nulla
+                    consequatur sequi perferendis inventore aliquid quas amet accusamus reiciendis. Soluta facilis nulla dignissimos ex quibusdam voluptatem. Fugit voluptatem hic voluptatum, tenetur temporibus minima debitis quisquam beatae corrupti ipsam at cum et numquam explicabo sint, ullam mollitia maxime sequi. Assumenda omnis eveniet maiores dolor quae dolore tenetur quod ab, in autem tempore excepturi aliquid quaerat ipsum culpa vel temporibus!
+                    Repudiandae nihil earum accusamus dolorem qui
+                    nam esse.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident repellat dolor ad, impedit eveniet porro deleniti nobis sint, perferendis, quis corrupti atque architecto. Natus illo doloremque facere ex maxime aliquid? Veniam sed unde cum voluptas ad aperiam tempore magni dolore? Quia adipisci eveniet reiciendis mollitia doloremque explicabo ad. Cupiditate et impedit, eligendi vitae ex laboriosam labore excepturi quo repellendus nisi libero maiores deleniti esse eveniet harum quisquam non facere reiciendis at nostrum? Repellat,
+                    eius dignissimos tenetur soluta temporibus ducimus.
+   
                 </p>
-                <h3>
-                    Some Heading
-                </h3>
-                <p style={{
-                    wordWrap: 'break-word',
-                    wordBreak: 'break-word',
-                    fontSize: '15px'
-                }}>
-                    A really good writting about my self.
-                    i am such a cool guy, well if you dont know me, then you are missing a lot
-                </p>
-                <h3>
-                    Some Heading
-                </h3>
-                <p style={{
-                    wordWrap: 'break-word',
-                    wordBreak: 'break-word',
-                    fontSize: '15px'
-                }}>
-                    A really good writting about my self.
-                    i am such a cool guy, well if you dont know me, then you are missing a lot
-                </p>
+               
             </div>
         </div>
     )

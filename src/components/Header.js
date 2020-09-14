@@ -8,7 +8,7 @@ const barIcon = <FontAwesomeIcon icon={faBars} />
 
 
  const Header = ()=>{
-    const navigation = ['home', 'contact', 'gallery'];
+    const navigation = [{text:'home', link: '/'}, {text:'contact', link: 'contact'},{text: 'about', link: 'about'}, {text:'gallery', link: 'gallery/all'}];
     const [toggleMenu, change] = useState(null)
     return(
         <header style= {{
@@ -31,20 +31,20 @@ const barIcon = <FontAwesomeIcon icon={faBars} />
                     {navigation.map((link, key)=>(
                         <div key={key}>
                             <Link  to={
-                                link === 'home' ? '/' : link
+                                link.link
                             } onClick = {()=>{
                                 change('slide-out')
                             }}>
-                                {link}
+                                {link.text}
                             </Link>
                         </div>
                     ))}
                     <div>
-                        <Link to='#about' onClick={() => {
+                        {/* <Link to='#about' onClick={() => {
                             change('slide-out')
                         }}>
                             About
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
                 <div className = 'bars' style= {{
